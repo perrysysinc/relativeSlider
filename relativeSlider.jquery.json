@@ -1,0 +1,40 @@
+{
+    "name": "relativeSlider",
+    "title": "Relative Slider",
+    "description": "jQuery plugin to calculate the relative worth of individual sliders relative to the total selected value. (If you have 5 sliders, 4 are on 100, 1 is on 0, then the 4 on 100 will have a percentage value of 25% each, the one on 0 will be 0%",
+    "keywords": [
+        "slider",
+        "relative",
+        "calculate",
+		"sliders"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Rafael Huisman",
+        "url": "http://perrysysinc.com/"
+    },
+    "maintainers": [
+        {
+            "name": "Rafael Huisman",
+            "url": "http://perrysysinc.com/"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/jquery/jquery-color/blob/2.1.2/MIT-LICENSE.txt"
+        },
+		{
+            "type": "GPL 2",
+            "url": "http://www.gnu.org/licenses/gpl-2.0.html"
+        }
+    ],
+    "bugs": "https://github.com/perrysysinc/relativeSlider/issues",
+    "homepage": "https://github.com/perrysysinc/relativeSlider",
+    "download": "https://github.com/perrysysinc/relativeSlider",
+    "dependencies": {
+        "jquery": ">=1.6",
+        "jquery.ui": ">=1.8"
+    },
+	"demo": "http://perrysysinc.com/demos/relativeSlider"
+}
