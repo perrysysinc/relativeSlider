@@ -1,6 +1,6 @@
 /*
- * relativeSlider 1.0.0 - multi level grouping indicators for tables
- * Version 1.0.0
+ * relativeSlider 1.0.1 - multi level grouping indicators for tables
+ * Version 1.0.1
  * @requires jQuery v1.6+ and jQuery.ui
  * 
  * Copyright (c) 2014 Perry Systems
