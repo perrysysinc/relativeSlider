@@ -111,21 +111,22 @@
 			
 			var percentages = [];
 			for (var x in calculatedValues){
-				var perc = (100/ totalValue ) * calculatedValues[x].value;
-				percentages.push(perc);
-			}
-			if (totalValue > 0){
-				var fixedPercentages = self.percentageFixer(percentages, 100);
-				var percIndex = 0;
-				for (var x in calculatedValues){
-					calculatedValues[x].percentage = fixedPercentages[percIndex];
-					percIndex++;
-				}
-			}else{
-				for (var x in calculatedValues){
-					calculatedValues[x].percentage = 0;
+				if (!(totalValue > 0)){
+					var perc = 100 / slidersCount;
+					percentages.push(perc)
+				}else{
+					var perc = (100/ totalValue ) * calculatedValues[x].value;
+					percentages.push(perc);
 				}
 			}
+			
+			var fixedPercentages = self.percentageFixer(percentages, 100);
+			var percIndex = 0;
+			for (var x in calculatedValues){
+				calculatedValues[x].percentage = fixedPercentages[percIndex];
+				percIndex++;
+			}
+				
 			calculateResult.totalValue = totalValue;
 			calculateResult.slidersCount = slidersCount;
 			calculateResult.sliders = calculatedValues;
