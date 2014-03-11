@@ -13,10 +13,3 @@ Example Usage:
 $('.my-slider').relativeSlider('init', {onChange : function(calculatedValues){
   console.log(calculatedValues);
 }});
-
-<div class="my-slider" id="slider1">29</div>
-<div class="my-slider" id="slider2">55</div>
-<div class="my-slider" id="slider3">12</div>
-<div class="my-slider" id="slider4">19</div>
-<div class="my-slider" id="slider5">21</div>
-<div class="my-slider" id="slider6">40</div>
